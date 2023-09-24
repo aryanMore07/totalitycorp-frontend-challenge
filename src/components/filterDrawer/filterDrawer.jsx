@@ -7,13 +7,11 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import SortIcon from '@mui/icons-material/Sort';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Sidebar from '../sidebar/Sidebar';
 
 function FilterDrawer() {
 
     const drawerWidth = 320;
-    const theme = useTheme();
     const [open, setOpen] = React.useState(false);
 
 
