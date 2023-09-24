@@ -5,6 +5,7 @@ import Home from "./pages/home/Home.Component";
 import Products from "./pages/productlisting/Products.component";
 import Cart from "./pages/cart/Cart";
 import { ToastContainer } from 'react-toastify';
+import Error from "./pages/error/Error";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </header>
       <ToastContainer />
