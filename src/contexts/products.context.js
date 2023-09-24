@@ -6,10 +6,10 @@ export const ProductContext = createContext();
 
 const initialProductState = {
     products: products,
+    cart: []
 }
 
 export function ProductProvider({ children }) {
-
     const [productState, productDispatch] = useReducer(productReducer, initialProductState)
     return <ProductContext.Provider value={{ productState, productDispatch }}>{children}</ProductContext.Provider>
 }

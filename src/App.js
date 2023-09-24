@@ -3,19 +3,21 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home.Component";
 import Products from "./pages/productlisting/Products.component";
+import Cart from "./pages/cart/Cart";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
-
-
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </header>
+      <ToastContainer />
     </div>
   );
 }

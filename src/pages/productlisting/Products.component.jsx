@@ -6,7 +6,18 @@ import { Button } from '@mui/material';
 
 function Products() {
 
-    const { productState } = useProducts();
+    const { productState, productDispatch } = useProducts();
+
+
+    const addToCartHandler = (product) => {
+        productDispatch({ type: "ADD_TO_CART", payload: product })
+    }
+
+    const removeFromCartHandler = (productId) => {
+        productDispatch({ type: "REMOVE_FROM_CART", payload: productId })
+    }
+
+    const isAlreadyInCart = (productId) => productState?.cart.find(({ _id }) => _id === productId);
 
     return (
         <div className='products-div'>
@@ -29,15 +40,23 @@ function Products() {
                                     <p><b>Category:</b> {inStock ? (`In Stock`) : (`Out of Stock`)}</p>
                                 </div>
                                 <div className='product-btn-div'>
-                                    <Button variant='contained' color='success'> Add to Cart</Button>
-                                    {/* <Button variant='outlined' color='error'>Remove from Cart</Button> */}
+                                    {
+                                        isAlreadyInCart(_id) ?
+                                            (
+                                                <Button variant='outlined' color='error' onClick={() => { removeFromCartHandler(_id) }}>Remove from Cart</Button>
+                                            )
+                                            :
+                                            (
+                                                <Button variant='contained' color='success' onClick={() => { addToCartHandler(product) }}> Add to Cart</Button>
+                                            )
+                                    }
                                 </div>
                             </div>
                         )
                     })
                 }
             </div>
-        </div >
+        </div>
     )
 }
 

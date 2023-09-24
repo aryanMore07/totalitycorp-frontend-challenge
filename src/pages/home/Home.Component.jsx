@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className='home-div'>
             <h1 className='home-heading'><i>Shop Beyond <span className='home-tag'>Boundaries</span>: Your <span className='home-tag'>One-Stop</span> Online Emporium</i></h1>
-            <Link className='home-btn'>Get Started</Link>
+            <Link className='home-btn' to="/products">Get Started</Link>
         </div>
     )
 }
