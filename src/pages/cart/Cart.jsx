@@ -84,7 +84,7 @@ function Cart() {
                                     <StripeCheckout
                                         name="Shop More Co."
                                         currency='INR'
-                                        amount={cartTotal}
+                                        amount={cartTotal * 100}
                                         token={onToken}
                                         shippingAddress
                                         stripeKey='pk_test_51MXmNSSF7VvGRN5rSjGRMGyWjWIWVK456JY8LBYuw025aPyMeNxyMKEixL6MIwgH5K9VW1zrCV04Nt4ayTFbIgA900uSgJcYyU'
