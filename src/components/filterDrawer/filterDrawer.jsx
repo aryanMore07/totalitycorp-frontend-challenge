@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled, useTheme } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -19,7 +19,6 @@ function FilterDrawer() {
         display: "flex",
         alignItems: "center",
         padding: theme.spacing(0, 1),
-        // necessary for content to be below app bar
         ...theme.mixins.toolbar,
         justifyContent: "flex-end"
     }));

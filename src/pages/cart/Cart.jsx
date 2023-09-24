@@ -18,7 +18,7 @@ function Cart() {
 
     const onToken = (token) => {
         if (token) {
-            productDispatch({type: "EMPTY_CART_ITEMS"})
+            productDispatch({ type: "EMPTY_CART_ITEMS" })
             toast.success('Thanks payment successful 😄', {
                 position: "top-center",
                 autoClose: 3000,
@@ -96,8 +96,7 @@ function Cart() {
 
 
             }
-
-        </div >
+        </div>
     );
 };
 
