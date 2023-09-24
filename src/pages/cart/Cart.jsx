@@ -86,7 +86,7 @@ function Cart() {
                                         currency='INR'
                                         amount={cartTotal}
                                         token={onToken}
-                                        // image={COName}
+                                        shippingAddress
                                         stripeKey='pk_test_51MXmNSSF7VvGRN5rSjGRMGyWjWIWVK456JY8LBYuw025aPyMeNxyMKEixL6MIwgH5K9VW1zrCV04Nt4ayTFbIgA900uSgJcYyU'
                                     />
                                 </div>
