@@ -1,0 +1,198 @@
+/* Default styles for mobile devices */
+/* Side Bar */
+
+#price-sort {
+    width: 15rem;
+  }
+  
+  .side-bar {
+    height: 37.5rem;
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid silver;
+    border-style: none none none none;
+  }
+  
+  .first-div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15rem;
+  }
+  
+  .second-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+  }
+  
+  .third-div {
+    width: 15rem;
+    width: 15rem;
+  }
+  
+  .fourth-div {
+    width: 15rem;
+  }
+  
+  .fifth-div {
+    width: 15rem;
+  }
+  
+  .filter-div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-checkbox {
+    width: 15px;
+  }
+  
+  .price-filter-tag {
+    width: 10.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .clear-btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  
+  /* Styles for tablets (portrait) and up */
+  @media (min-width: 768px) {
+  /* Side Bar */
+
+  .side-bar {
+    height: 38.5rem;
+    margin: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid silver;
+    border-style: none none none none;
+    position: absolute;
+  }
+
+  .first-div {
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+  }
+
+  .second-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+  }
+
+  .price-filter-tag {
+    width: 10.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .third-div {
+    width: 12rem;
+  }
+
+  .fourth-div {
+    width: 12rem;
+  }
+
+  .filter-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-checkbox {
+    width: 15px;
+  }
+
+  .product-listing {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .clear-btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  }
+  
+  /* Styles for laptops and up */
+  @media screen and (min-width: 1024px) {
+    .clear-btn {
+        background-color: transparent;
+        border: none;
+        color: black;
+        text-decoration: underline;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    
+      /* Side Bar */
+    
+      .side-bar {
+        height: 38.5rem;
+        margin: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 1px solid silver;
+        border-style: none none none none;
+        position: absolute;
+      }
+    
+      .first-div {
+        display: flex;
+        justify-content: space-between;
+        width: 15rem;
+      }
+    
+      .second-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 15rem;
+      }
+    
+      .third-div {
+        width: 15rem;
+      }
+    
+      .fourth-div {
+        width: 15rem;
+      }
+    
+      .fifth-div {
+        width: 15rem;
+      }
+    
+      .filter-div {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .filter-checkbox {
+        width: 15px;
+      }
+  }
